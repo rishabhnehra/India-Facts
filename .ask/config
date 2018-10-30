@@ -1,0 +1,40 @@
+{
+  "deploy_settings": {
+    "default": {
+      "skill_id": "amzn1.ask.skill.7dc69254-9d28-4c08-9d00-37d9850bb50e",
+      "was_cloned": false,
+      "merge": {
+        "manifest": {
+          "apis": {
+            "custom": {
+              "endpoint": {
+                "uri": "ask-custom-india-facts-default"
+              }
+            }
+          }
+        }
+      },
+      "resources": {
+        "manifest": {
+          "eTag": "33a00dc9b265d11b700f4a33de377988"
+        },
+        "interactionModel": {
+          "en-US": {
+            "eTag": "68c6ec32cd3621addb8376f29043d409"
+          }
+        },
+        "lambda": [
+          {
+            "arn": "arn:aws:lambda:us-east-1:132677072317:function:ask-custom-india-facts-default",
+            "functionName": "ask-custom-india-facts-default",
+            "awsRegion": "us-east-1",
+            "alexaUsage": [
+              "custom/default"
+            ],
+            "revisionId": "1f3b541a-5f15-441a-b975-6dbbb460a5bd"
+          }
+        ]
+      }
+    }
+  }
+}
